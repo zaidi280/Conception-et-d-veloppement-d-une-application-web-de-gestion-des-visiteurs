@@ -1,0 +1,48 @@
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.csys.template: DEBUG
+io.jsonwebtoken: DEBUG
+
+management:
+  security:
+    enabled: false
+  metrics.binders.hystrix.enabled: false
+
+security:
+  basic:
+    enabled: false
+
+server:
+  port: 9011
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://DESKTOP-TJSVKJ6\SQL2019;databaseName=test;encrypt=false
+    username: sa
+    password: 123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.SQLServerDialect
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+
+  liquibase:
+    enabled: false
+  session:
+    store-type: none
+
+# JWT secret will be generated dynamically by WebappApplication
+
+# Audit configuration
+audit:
+  migration:
+    auto-run: true  # Set to true to automatically migrate existing records on startup
