@@ -1,0 +1,58 @@
+/* Custom Scrollbar Styles for Military Clinic Theme */
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #2c5530;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #1a3d1f;
+}
+
+.custom-scrollbar::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}
+
+/* Table specific scrollbar */
+.table-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.table-scrollbar::-webkit-scrollbar-track {
+  background: #f8f9fa;
+  border-radius: 3px;
+}
+
+.table-scrollbar::-webkit-scrollbar-thumb {
+  background: #2c5530;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.table-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #1a3d1f;
+}
+
+/* Firefox scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #2c5530 #f1f1f1;
+}
+
+.table-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #2c5530 #f8f9fa;
+}
