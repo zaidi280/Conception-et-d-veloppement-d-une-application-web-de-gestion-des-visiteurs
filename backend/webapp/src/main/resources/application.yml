@@ -18,9 +18,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:sqlserver://DESKTOP-TJSVKJ6\SQL2019;databaseName=test;encrypt=false
-    username: sa
-    password: 123
+    url: jdbc:sqlserver://DESKTOP-EXMAPLE\SQL2019;databaseName={YOUR_DB_NAME};encrypt=false
+    username: {YOUR_DB_USERNAME}
+    password: {YOUR_DB_PASSWORD}
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
 
   jpa:
